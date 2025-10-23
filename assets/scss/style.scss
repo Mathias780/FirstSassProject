@@ -1,21 +1,20 @@
-// 1️⃣ Base setup
+//Base setup
 @import "base/variables";
 @import "base/mixins";
 @import "base/reset";
 @import "base/global";
 
-// 2️⃣ Layout structure
+//Layout structure
 @import "layout/grid";
 @import "layout/header";
 @import "layout/sections";
 @import "layout/footer";
 
-// 3️⃣ Components
+//Components
 @import "components/buttons";
 @import "components/cards";
 
-// 4️⃣ Utils (animations, helpers)
+// Utils (animations, helpers)
 @import "utils/animations";
 @import "utils/helpers";
 
-::backdrop
