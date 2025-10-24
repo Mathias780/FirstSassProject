@@ -36,6 +36,7 @@ a {
 }
 
 /* Layout */
+/* HEADER -------------------------------------------------- */
 header {
   background: #0C2A39;
   padding: 1.5rem 0;
@@ -59,6 +60,15 @@ header .list-header a:hover {
   color: #E7C45A;
 }
 
+/* MOBILE VERSION -------------------------------------------------- */
+@media (max-width: 768px) {
+  .list-header {
+    display: none;
+  }
+  header .header-container {
+    justify-content: space-between;
+  }
+}
 /* HERO -------------------------------------------------- */
 .hero-container {
   background: url("../img/Réalisations1.jpg");
@@ -218,6 +228,44 @@ header .list-header a:hover {
   opacity: 0.9rem;
 }
 
+/* MOBILE VERSION -------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero-container {
+    text-align: center;
+    padding: 6rem 0;
+    background-position: center;
+  }
+  .hero-container .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 768px) {
+  .about-container {
+    padding: 2.5rem 0;
+  }
+  .about-container p {
+    padding: 0 1rem;
+  }
+  .about-container .cards-about {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-container .gallery-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact-container .cards-about {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+}
+/* FOOTER -------------------------------------------------- */
 footer {
   background: #0C2A39;
   color: white;
@@ -260,6 +308,17 @@ footer .footer-container .copyright small {
   font-size: 0.8rem;
 }
 
+/* MOBILE VERSION -------------------------------------------------- */
+@media (max-width: 768px) {
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  footer .footer-contact-container {
+    text-align: center;
+  }
+}
 /* Components */
 .btn-blue {
   background: #0C2A39;

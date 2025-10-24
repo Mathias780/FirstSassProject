@@ -1,3 +1,5 @@
+/* HEADER -------------------------------------------------- */
+
 header {
   background: $blue-dark;
   padding: 1.5rem 0;
@@ -19,5 +21,18 @@ header {
       transition: .3s;
       &:hover { color: $yellow; }
     }
+  }
+}
+
+
+/* MOBILE VERSION -------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .list-header {
+    display: none;
+  }
+
+  header .header-container {
+    justify-content: space-between;
   }
 }

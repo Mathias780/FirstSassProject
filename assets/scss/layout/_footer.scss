@@ -1,3 +1,5 @@
+/* FOOTER -------------------------------------------------- */
+
 footer {
   background: $blue-dark;
   color: white;
@@ -48,5 +50,20 @@ footer {
         font-size: 0.8rem;
       }
     }
+  }
+}
+
+
+/* MOBILE VERSION -------------------------------------------------- */
+
+@media (max-width: 768px) {
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  footer .footer-contact-container {
+    text-align: center;
   }
 }
