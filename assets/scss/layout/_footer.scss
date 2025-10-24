@@ -1,0 +1,52 @@
+footer {
+  background: $blue-dark;
+  color: white;
+  padding: 3rem 0;
+  font-size: 0.9rem;
+
+  .footer-container {
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+
+      .footer-image-container img {
+        height: 60px;
+      }
+
+      .footer-info-container p {
+        max-width: 260px;
+        line-height: 1.5;
+      }
+
+      .footer-contact-container {
+        text-align: right;
+
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+          font-weight: 600;
+          color: white;
+        }
+
+        p {
+          line-height: 1.4;
+        }
+      }
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 1.5rem;
+      text-align: center;
+      opacity: 0.8;
+
+      small {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,3 +1,279 @@
+@charset "UTF-8";
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+  color: #1C1C1C;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #0C2A39;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout */
+header {
+  background: #0C2A39;
+  padding: 1.5rem 0;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .list-header {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+header .list-header a {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header .list-header a:hover {
+  color: #E7C45A;
+}
+
+/* HERO -------------------------------------------------- */
+.hero-container {
+  background: url("../img/Réalisations1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.hero-container .hero-content .yellow-text {
+  color: #E7C45A;
+}
+.hero-container .hero-content h1 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* ABOUT -------------------------------------------------- */
+.about-container {
+  padding: 4rem 0;
+  text-align: center;
+}
+.about-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+.about-container p {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.about-container .cards-about {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+.about-container .cards-about .card-about {
+  max-width: 260px;
+  text-align: center;
+}
+.about-container .cards-about .card-about img {
+  height: 60px;
+  margin: 0 auto 1.5rem auto;
+}
+.about-container .cards-about .card-about h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #0C2A39;
+}
+.about-container .cards-about .card-about p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.about-container .btn-container {
+  margin-top: 2rem;
+}
+
+/* GALLERY ------------------------------------------------- */
+.gallery-container {
+  padding: 4rem 0;
+  text-align: center;
+}
+.gallery-container .container-title {
+  margin-bottom: 2rem;
+}
+.gallery-container .container-title h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.gallery-container .container-title h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.gallery-container .gallery-cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.gallery-container .gallery-cards .gallery-card {
+  text-align: center;
+}
+.gallery-container .gallery-cards .gallery-card img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+.gallery-container .gallery-cards .gallery-card h3 {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: #0C2A39;
+}
+.gallery-container .gallery-cards .gallery-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.gallery-container .btn-container {
+  margin-top: 3rem;
+}
+
+/* Contact ------------------------------------------------- */
+.contact-container {
+  padding: 4rem 0;
+  text-align: center;
+}
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.contact-container p {
+  max-width: 900px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.contact-container .cards-about {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+.contact-container .cards-about .card-about {
+  max-width: 260px;
+  text-align: center;
+}
+.contact-container .cards-about .card-about img {
+  height: 60px;
+  margin: 0 auto 1.5rem auto;
+}
+.contact-container .cards-about .card-about h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #0C2A39;
+}
+.contact-container .cards-about .card-about p {
+  font-size: 0.9rem;
+  opacity: 0.9rem;
+}
+
+footer {
+  background: #0C2A39;
+  color: white;
+  padding: 3rem 0;
+  font-size: 0.9rem;
+}
+footer .footer-container .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+footer .footer-container .footer-content .footer-image-container img {
+  height: 60px;
+}
+footer .footer-container .footer-content .footer-info-container p {
+  max-width: 260px;
+  line-height: 1.5;
+}
+footer .footer-container .footer-content .footer-contact-container {
+  text-align: right;
+}
+footer .footer-container .footer-content .footer-contact-container h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: white;
+}
+footer .footer-container .footer-content .footer-contact-container p {
+  line-height: 1.4;
+}
+footer .footer-container .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1.5rem;
+  text-align: center;
+  opacity: 0.8;
+}
+footer .footer-container .copyright small {
+  font-size: 0.8rem;
+}
+
+/* Components */
+.btn-blue {
+  background: #0C2A39;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.btn-blue:hover {
+  background: #E7C45A;
+  color: #0C2A39;
+}
+
+/* Utils */
 
 /*# sourceMappingURL=style.css.map */

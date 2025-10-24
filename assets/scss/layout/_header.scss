@@ -1,0 +1,23 @@
+header {
+  background: $blue-dark;
+  padding: 1.5rem 0;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-header {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    a {
+      color: white;
+      font-weight: 500;
+      transition: .3s;
+      &:hover { color: $yellow; }
+    }
+  }
+}

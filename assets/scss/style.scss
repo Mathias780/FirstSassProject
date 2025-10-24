@@ -1,20 +1,18 @@
-//Base setup
+/* Base */
 @import "base/variables";
-@import "base/mixins";
 @import "base/reset";
+@import "base/fonts";
 @import "base/global";
 
-//Layout structure
-@import "layout/grid";
+/* Layout */
 @import "layout/header";
 @import "layout/sections";
 @import "layout/footer";
 
-//Components
+/* Components */
 @import "components/buttons";
 @import "components/cards";
 
-// Utils (animations, helpers)
+/* Utils */
 @import "utils/animations";
 @import "utils/helpers";
-
