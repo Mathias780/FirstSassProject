@@ -1,9 +1,9 @@
-@use "../base/variables" as *;
+@use "../base/variables" as var;
 
 /* FOOTER -------------------------------------------------- */
 
 footer {
-  background: $blue-dark;
+  background: var.$blue-dark;
   color: white;
   padding: 3rem 0;
   font-size: 0.9rem;

@@ -1,14 +1,14 @@
-@use "../base/variables" as *;
+@use "../base/variables" as var;
 
 .btn-blue {
-  background: $blue-dark;
+  background: var.$blue-dark;
   color: white;
   padding: .8rem 2rem;
   border-radius: 4px;
   display: inline-block;
   transition: .3s;
   &:hover {
-    background: $yellow;
-    color: $blue-dark;
+    background: var.$yellow;
+    color: var.$blue-dark;
   }
 }
