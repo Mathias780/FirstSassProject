@@ -1,18 +1,17 @@
 /* Base */
-@import "base/variables";
-@import "base/reset";
-@import "base/fonts";
-@import "base/global";
+@use "base/reset";
+@use "base/fonts";
+@use "base/global";
 
 /* Layout */
-@import "layout/header";
-@import "layout/sections";
-@import "layout/footer";
+@use "layout/header";
+@use "layout/sections";
+@use "layout/footer";
 
 /* Components */
-@import "components/buttons";
-@import "components/cards";
+@use "components/buttons";
+@use "components/cards";
 
 /* Utils */
-@import "utils/animations";
-@import "utils/helpers";
+@use "utils/animations";
+@use "utils/helpers";
