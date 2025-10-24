@@ -1,9 +1,9 @@
-@use "../base/variables" as *;
+@use "../base/variables" as var;
 
 /* HEADER -------------------------------------------------- */
 
 header {
-  background: $blue-dark;
+  background: var.$blue-dark;
   padding: 1.5rem 0;
 
   .header-container {
@@ -21,7 +21,7 @@ header {
       color: white;
       font-weight: 500;
       transition: .3s;
-      &:hover { color: $yellow; }
+      &:hover { color: var.$yellow; }
     }
   }
 }

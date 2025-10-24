@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@use "../base/variables" as var;
 
 /* HERO -------------------------------------------------- */
 .hero-container {
@@ -12,7 +12,7 @@
 
   .hero-content {
     .yellow-text {
-      color: $yellow;
+      color: var.$yellow;
     }
 
     h1 {
@@ -20,7 +20,7 @@
       font-weight: 600;
       line-height: 1.1;
       text-transform: uppercase;
-      color: $bg-color ;
+      color: var.$bg-color ;
     }
   }
 }
@@ -68,7 +68,7 @@
         font-size: 1rem;
         font-weight: 600;
         margin-bottom: .8rem;
-        color: $blue-dark;
+        color: var.$blue-dark;
       }
 
       p {
@@ -123,7 +123,7 @@
         font-size: 1rem;
         margin-top: .8rem;
         font-weight: 600;
-        color: $blue-dark;
+        color: var.$blue-dark;
       }
 
       p {
@@ -181,7 +181,7 @@
                 font-size: 1rem;
                 font-weight: 600;
                 margin-bottom: .8rem;
-                color: $blue-dark;
+                color: var.$blue-dark;
             }
 
             p {

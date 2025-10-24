@@ -1,9 +1,9 @@
-@use "variables" as *;
+@use "variables" as var;
 
 h1, h2, h3, h4 {
-  font-family: $font-main;
+  font-family: var.$font-main;
   text-transform: uppercase;
-  color: $blue-dark;
+  color: var.$blue-dark;
 }
 a {
   text-decoration: none;
